@@ -1,0 +1,198 @@
+@import url('https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro?styles=82961,82962,82971,82972,82969,82970,82967,82968,82965,82966,82963,82964,82959,82960,82957,82958');
+
+/* font-family: 'Neue Haas Grotesk Display Pro', sans-serif; */
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    height: auto;
+}
+
+
+
+
+
+
+.contact-me {
+    height: 290px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact-me p {
+    color: rgb(0, 73, 121);
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.contact-me .button-two {
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 25px;
+    transition: .4s;
+}
+.contact-me .button-two:hover {
+    background-color: rgb(249, 191, 84);
+    left: 8%;
+    transform: translateY(-50%);
+    transition: .3s;
+    transform: scale(1.1);
+}
+
+
+
+
+.Button {
+    background-color:  #ffffff;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 25px;
+    transition: .4s;
+    color: rgb(0, 73, 121);
+    border: solid rgb(0, 73, 121) 2px;
+}
+
+.Button:hover {
+    background-color: rgb(135, 193, 232);
+    left: 8%;
+    color: white;
+    border: white solid 2px;
+    transform: translateY(-50%);
+    transition: .3s;
+    transform: scale(1.1);
+}
+
+.Button {
+    background-color:  #ffffff;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 25px;
+    transition: .4s;
+    color: rgb(0, 73, 121);
+    border: solid rgb(0, 73, 121) 2px;
+}
+
+.Button:hover {
+    background-color: rgb(135, 193, 232);
+    left: 8%;
+    color: white;
+    border: white solid 2px;
+    transform: translateY(-50%);
+    transition: .3s;
+    transform: scale(1.1);
+}
+
+.container{
+    margin-top: 100px;
+   
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 500px;
+    gap: 10px;
+    justify-content: space-evenly;
+    padding: 20px 0px;
+}
+
+.container-item {  
+    padding: 40px;
+    border-radius: 30px;
+}
+
+.container-item img {
+    height: 50px;
+}
+
+.socmed-box {
+    margin: 10px 10px;
+    padding: 10px 10px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.container-item h1{
+    font-size: 75px;
+    color: rgb(0, 73, 121);
+}
+
+.container-item h2{
+    padding: 10px 10px;
+    color: rgb(0, 73, 121);
+}
+
+.container-item h2{
+    color: rgb(0, 73, 121);
+    padding: 10px 10px;
+}
+.container-item h3{
+    margin-top: 20px;
+    padding: 10px 10px;
+    color: rgb(0, 73, 121);
+}
+
+.container-item p {
+    color: rgb(0, 73, 121);
+}
+/* container2 */
+
+.container-item2 h2{
+    text-align: center;
+    font-size: 50px;
+    padding: 10px 10px;
+    color: rgb(0, 73, 121);
+}
+
+.container-item2 {  
+    padding: 40px;
+    border-radius: 30px;
+    background-color: rgb(223, 242, 254);
+    box-shadow: 5px 5px 8px rgb(169, 169, 169);
+}
+
+.container-item2 img {
+    height: 50px;
+}
+
+.container-item2 a {
+   text-decoration: none;
+}
+.container-item2 p {
+    padding: 0px 20px;
+    font-weight: 700;
+    color: rgb(0, 73, 121);
+}
+
+footer {
+    margin-top: 120px;
+    width: 100%;
+    height: 100px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 73, 121);;
+}
+
+.end {
+    position: absolute;
+    color: rgb(198, 219, 254);
+    bottom: 35px;
+    
+}

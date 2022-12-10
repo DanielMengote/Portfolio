@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <style>
+      
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:  sans-serif;
+}
+
+body{
+  background: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+} 
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 1000px;
+  margin: 50px;
+  background: white;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.5);
+}
+
+.container .left-side {
+  position: relative;
+  background: rgb(2, 64, 6);
+  padding: 40px;
+}
+
+.profile-text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid white;
+  
+}
+
+.profile-text .imgbx {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 35px 55px rgba(255, 255, 255, 0.13);
+  
+}
+
+.profile-text .imgbx img {
+  position: absolute;
+  object-fit: cover;
+  width: 100% ; 
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-text h2 {
+  color: white;
+  font-size: 1.5em;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  line-height: 1.5em;
+  
+}
+
+.profile-text h2 span {
+  font-size: 0.8em;
+  font-weight: 300;
+  
+
+}
+
+.contact-info {
+  padding-top: 40px;
+}
+
+.title {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.contact-info ul {
+  position: relative;
+}
+
+.contact-info ul li .text{
+  color: white;
+  font-weight: 500px;
+  line-height: 25px;
+  
+}
+
+.contact-info.education ul{
+  list-style: none;
+}
+.contact-info.education li{
+  margin-bottom: 15px;
+  line-height: 23px;
+}
+
+.contact-info.education h5 {
+  color: rgb(222, 226, 0);
+  font-weight: bold;
+}
+
+.contact-info.education h3 {
+  color: white;
+  font-weight: bold;
+}
+
+.contact-info.education h4 {
+  color: white;
+  font-weight: normal ;
+}
+
+.contact-info.languages ul li span{
+  color: white;
+  font-weight: 500px;
+  line-height: 25px;
+  
+}
+.contact-info.languages ul {
+  list-style: none;
+  
+}
+
+.contact-info.languages .percent{
+  position: relative;
+  width: 100%;
+  height: 6px;
+  background-color: #081921;
+  margin-top: 7px;
+}
+
+.contact-info.languages ul li .percent .percentage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: rgb(0, 148, 197);
+}
+
+.container .right-side {
+  position: relative;
+  background: #fff;
+  padding: 40px;
+  
+}
+
+.title2 {
+  color: rgb(0, 49, 71);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  
+}
+
+p{
+  color: #333;
+}
+.about {
+  
+  margin-bottom: 50px;
+  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+  
+
+
+
+.about:last-child {
+  margin-bottom: 0px;
+}
+
+.right-side .about .box {
+  margin: 20px, 0;
+  
+  display: flex;
+  flex-direction: row;
+}
+
+.right-side .about .box .year-company {
+  min-width: 150px;
+
+}
+.right-side .about .box .year-company h5{
+text-transform: uppercase;
+color: #848c90;
+}
+
+
+
+.right-side .about .box .text h4 {
+  color: #2a7da2;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.about.skills .box {
+  position: relative;
+  display: grid;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 150px 1fr;
+}
+
+.about.skills .box h4 {
+  color: black;
+  margin: 10px;
+  text-transform: uppercase;
+}
+
+.about.skills .box .percent {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background-color: #b3b1b1;
+  margin-top: 7px;
+  border-radius: 50px;
+  padding-bottom: 5px;
+}
+
+.about.skills .box .percent div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: rgb(0, 148, 197);
+  border-radius: 50px;
+}
+
+.about.interest ul{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+
+.about.interest ul li {
+  margin-left: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  
+}
+
+
+.about.socialmedia {
+  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.about.socialmedia .socialmedia-content .imgbox-fb {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.about.socialmedia .socialmedia-content .imgbox-ig {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.about.socialmedia .socialmedia-content .imgbox-yt {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.about.socialmedia .socialmedia-content img {
+  position: absolute;
+  width: 100%;
+}
+
+.about.socialmedia .socialmedia-content .socmed-section {
+  position: relative;
+}
+
+a{
+  display: inline-block;
+  position: absolute;
+  margin: auto;
+  padding: 30px 0;
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+  position: absolute;
+  
+}
+
+@media(max-width: 1000px)
+{
+  .container
+  {
+    margin: 10px;
+    grid-template-columns: repeat(1,1fr);
+  }
+
+  .about.interest ul {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+}
+
+@media(max-width: 600px)
+{
+  .about .box
+  {
+    flex-direction: column;
+  }
+  .about .box .year-company
+  {
+    margin-bottom: 5px;
+  }
+  .about.interest ul {
+    grid-template-columns: repeat(1,1fr);
+    
+  }
+  .about.interest ul li{
+    margin-bottom: 10px;
+  }
+
+  
+}
+
+    </style>
+  </head>
+
+  
+  <body>
+    <div class="container">
+      <div class="left-side">
+        <div class="profile-text">
+          <div class="imgbx">
+            <img src="Img/prof.jpg.jpg">
+          </div>
+          <h2>Daniel C. Mengote<br><span>BSCS - 3 A</span></h2>
+        </div>
+
+        <div class="contact-info">
+          <h3 class="title">Contact Info</h3>
+          <ul>
+            <li>
+              <span class="text">+639084376312</span>
+            </li>
+            <li>
+              <span class="text">danielmengoteessu@gmail.com</span>
+            </li>
+           
+            <li>
+              <span class="text">Maypangdan Borongan City, Eastern Samar</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contact-info education">
+          <h3 class="title">education</h3>
+          <ul>
+            <li>
+              <h5>2008 - 2014</h5>
+              <h3>Elementary School</h3>
+              <h4>Maypangdan Elementray School</h4>
+            </li>
+            <li>
+              <h5>2014 - 2018</h5>
+              <h3>Elementary School</h3>
+              <h4>Maypangdan National School</h4>
+            </li>
+            <li>
+              <h5>2018 - 2020</h5>
+              <h3>Senior High School</h3>
+              <h4>ESSU - Senior High School </h4>
+            </li>
+            <li>
+              <h5>2020 - Present</h5>
+              <h3>College</h3>
+              <h4>Eastern Samar State University</h4>
+            </li>
+          </ul>
+        </div>
+  
+        <div class="contact-info languages">
+          <h3 class="title">languages</h3>
+          <ul>
+            <li>
+              <span>English</span>
+              <div class="percent">
+                <div class="percentage" style="width: 75%;"></div>
+              </div>
+            </li>
+            <li>
+              <span>tagalog</span>
+              <div class="percent">
+                <div class="percentage" style="width: 95%;"></div>
+              </div>
+            </li>
+            <li>
+              <span>Waray</span>
+              <div class="percent">
+                <div class="percentage" style="width: 100%;"></div>
+              </div>
+            </li>
+            <li>
+              <span>Bisaya</span>
+              <div class="percent">
+                <div class="percentage" style="width: 70%;"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="right-side">
+        <div class="about">
+          <h2 class="title2">About</h1>
+          <p>
+            “I am Daniel, I live in Brgy. Maypangdan Borongan City, Eastern Samar Philippines. I am a student at Eastern Samar State University, studying Computer Science. In our family, we are five siblings. I have a younger sister and my older brother. Our family consists of my sister, my brother, my father, my loving mother.
+            <br><br>My father is a scientist whereas my mother is a schoolteacher. A lot of caring moments and love, is always what I get from everyone in my family. I am studying in one of the reputed schools in Delhi, which has always fed me to be motivated towards the future.
+
+          </p>
+        </div>
+
+        <div class="about">
+          <h2 class="title2">Experience</h2>
+          <div class="box">
+              <div class="year-company">
+                <h5>2020-2020</h5>
+                <h5>ICTC Extension</h5>
+              </div>
+              <div class="text">
+                <h4>Technical Support </h4>
+                  <p>Worked closely with IT tech support and assisted them in solving technical problems. Resolved minor problems fixes and created documentation for existing projects</p>
+              </div>
+          </div>
+
+        </div>
+
+        <div class="about">
+          <h2 class="title2">Other honors and awards</h2>
+          <div class="box">
+              <div class="year-company">
+                <h5>2018-2020</h5>
+                <h5>ESSU -SHS</h5>
+               
+              </div>
+              <div class="text">
+                <h4>with honors </h4>
+                <br><br>
+              </div>
+          </div>
+
+          <div class="box">
+            <div class="year-company">
+              <h5>2019-2020</h5>
+              <h5>ESSU - SHS</h5>
+            </div>
+            <div class="text">
+              <h4>TVL-ICT AWARD FOR SPECIFIC DISCIPLINE</h4>
+              <br><br>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="year-company">
+              <h5>2019-2020</h5>
+              <h5>ICTC EXTENSION</h5>
+            </div>
+            <div class="text">
+              <h4>BEST IN WORK IMMERSION</h4>
+              <br><br>
+            </div>
+          </div>
+
+
+          <div class="box">
+            <div class="year-company">
+              <h5>2013-2017</h5>
+              <h5>MNHS</h5>
+            </div>
+            <div class="text">
+              <h4>WITH HONORS</h4>
+              <br><br>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="year-company">
+              <h5>2007-2013</h5>
+              <h5>MES</h5>
+            </div>
+            <div class="text">
+              <h4>WITH HONORS</h4>
+              <br><br>
+            </div>
+          </div>
+
+          
+      </div>
+
+
+        <div class="about skills">
+          <h2 class="title2">Professional skill</h2 >
+          <div class="box">
+            <h4>HTML</h4>
+            <div class="percent">
+              <div style="width: 50%;"></div>
+            </div>
+          </div>
+          <div class="box">
+            <h4>CSS</h4>
+            <div class="percent">
+              <div style="width: 40%;"></div>
+            </div>
+          </div>
+          <div class="box">
+            <h4>python</h4>
+            <div class="percent">
+              <div style="width: 30%;"></div>
+            </div>
+          </div>
+          <div class="box">
+            <h4>JAVA</h4>
+            <div class="percent">
+              <div class="percentage" style="width: 30%;"></div>
+            </div>
+          </div>
+          <div class="box">
+            <h4>Video Editing</h4>
+            <div class="percent">
+              <div class="percentage" style="width: 60%;"></div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="about interest">
+          <h2 class="title2">INTEREST</h2>
+          <ul>
+            <li>Gaming<br></li>
+            <li>Cooking</li>
+            <li>Digital Art</li>
+            <li>Programming</li>
+          </ul>
+        </div>
+
+        <div class="about socialmedia">
+          <h2 class="title2">social media</h2>
+          <div class="socialmedia-content">
+            <div class="socmed-section">
+              <div class="imgbox-fb">
+                <img src="img/fb.png"> 
+              </div>
+              <a href="https://web.facebook.com/daniel.mengote.5/" target="_blank" >https://web.facebook.com/daniel.mengote.5/</a> 
+            </div>
+            <div class="socmed-section">
+              <div class="imgbox-ig">
+                <img src="img/ig.png">  
+              </div>
+              <a href="https://www.instagram.com/adankuno_/" target="_blank" >https://www.instagram.com/adankuno_/</a>  
+            </div>
+            <div class="socmed-section">
+              <div class="imgbox-yt">
+                <img src="img/yt.png">  
+              </div>
+               <a href="https://www.youtube.com/channel/UCfbLfC9Z1da1yIQTzsBp1Hw" target="_blank" >https://www.youtube.com/channel/UCfbLfC9Z1da1yIQTzsBp1Hw</a> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+ 

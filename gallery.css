@@ -1,0 +1,172 @@
+@import url('https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro?styles=82961,82962,82971,82972,82969,82970,82967,82968,82965,82966,82963,82964,82959,82960,82957,82958');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    box-sizing: border-box;
+
+}
+
+
+body {
+   
+    height: 300vh;
+}
+
+
+
+
+.pagetitle {
+    margin-top: 150px;
+    background-color: transparent;
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+
+span {
+    font-size: 30px;
+    
+}
+
+
+
+
+.pagetitle h2{
+    text-align: center;
+    font-size: 75px;
+    color: rgb(20, 112, 175);
+}
+
+.pagetitle h3{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(108, 194, 250);
+  }
+
+.container{
+    margin-top: 10px;
+    justify-content: center;
+    padding: 50px 150px;
+    background-color: transparent;
+    width: 100%;
+    height: 200vh;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 250px 250px 250px;
+    gap: 30px;
+   
+    
+
+}
+
+.titlebar {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    
+    
+}
+
+
+.titlebar h2 {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+   padding-top: 6%;
+   font-size: 70px;
+    
+}
+
+.griditem {
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    overflow: hidden;
+    justify-content: center;
+    transition: .3s;
+    box-shadow: 10px 10px 15px rgb(177, 177, 177);
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: rgb(233, 238, 242);
+
+}
+
+.griditem:hover {
+    scale: 1.06;
+    transition: .3s;
+
+}
+
+.griditem img {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.griditem .desc {
+    background-color: rgb(215, 235, 248);
+   color: rgb(20, 112, 175);
+    height: 50px;
+    width: 100%;
+    padding: 20px 20px;
+    text-align: left;
+    font-weight: 600;
+    
+}
+
+.griditem .desc p {
+    text-align: center;
+    
+}
+
+footer {
+    margin-top: 500px;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+footer p:nth-child(1){
+    font-size: 30px;
+    color: rgb(20, 112, 175);
+    margin-bottom: 20px;
+}
+footer p:nth-child(2){
+   font-size: 17px;
+   width: 500px;
+   text-align: center;
+   line-height: 26px;
+}
+
+
+
+.social a img{
+    width: 45px;
+    height: 45px;
+    margin: 20px 12px;
+    transition: .4s;
+}
+
+.social a img:hover{
+ 
+    margin: 20px 12px;
+    transition: .3s;
+    transform: scale(1.1);
+}
+
+.end {
+    position: absolute;
+    color: rgb(0, 0, 0);
+    bottom: 5px;
+    
+}

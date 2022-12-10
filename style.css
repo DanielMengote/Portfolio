@@ -1,0 +1,304 @@
+@import url('https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro?styles=82961,82962,82971,82972,82969,82970,82967,82968,82965,82966,82963,82964,82959,82960,82957,82958');
+
+/* font-family: 'Neue Haas Grotesk Display Pro', sans-serif; */
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    box-sizing: border-box;
+
+}
+
+body{
+    /* background-image: linear-gradient(rgb(119, 200, 253), rgb(255, 255, 255)); */
+   
+}
+
+
+
+
+.main img {
+    height: 500px;
+    
+}
+
+.about .main img{
+    border-radius: 30px;
+    margin-left: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+    
+}
+
+
+.about {
+    
+    width: 100%;
+    padding: 100px 0px;
+    
+}
+
+.about-text {
+    width: 650px;
+    margin-left: 45px;
+    padding: 20px;
+}
+
+.main {
+    width: 1130px;
+    background-color: rgb(213, 238, 255);
+    border-radius: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    max-width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    box-shadow: 15px 15px 8px gray;
+    margin: 50px auto;
+  }
+
+
+.about-text h2 {
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    color: rgb(20, 112, 175);
+    font-size: 75px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.about-text h5 {
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    margin-bottom: 35px;
+    font-size: 22px;
+    color: rgb(20, 112, 175);
+}
+
+.about-text p {
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    color: rgb(20, 112, 175);
+    margin-bottom: 45px;
+} 
+
+
+
+.service {
+    width: 100%;
+    padding: 100px 0px;
+}
+
+
+
+.title h2{
+    color: rgb(20, 112, 175);
+    font-size: 75px;
+    width: 1130px;
+    
+    margin: 30px auto;
+    text-align: center;
+}
+
+.box {
+   
+    
+    display: flex;
+    justify-content: center;
+    min-height: 400px;
+}
+
+
+.card {
+    background-color: rgb(210, 230, 244);
+   height: 365px;
+   width: 300px;
+   margin: 25px;
+   padding: 20px 35px;
+   border-radius: 20px;
+   position: relative;
+   overflow: hidden;
+   text-align: center;
+   box-shadow: 10px 10px 15px #666;
+   transition: .5s;
+
+ 
+}
+
+.card:hover {
+    background-color: rgb(146, 212, 255);
+    height: 365px;
+    width: 300px;
+    margin: 15px;
+    padding: 20px 35px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 20px 20px 15px #666;
+    transition: .5s;
+    transform: scale(1.1);
+}
+
+h5 {
+    color: rgb(118, 172, 208);
+    font-size: 23px;
+    margin-bottom: 15px;
+    
+}
+
+.pra p{
+    color: rgb(20, 112, 175);
+    line-height: 27px;
+    margin-bottom: 40px;
+}
+
+
+
+.card .button{
+    background-color: rgb(251, 251, 251);
+    color: rgb(0, 31, 51);
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 25px;
+    transition: .4s;
+    margin-top: 300px;
+    
+}
+
+.button:hover {
+    background-color: rgb(249, 191, 84);
+    left: 8%;
+    transform: translateY(-50%);
+    transition: .3s;
+    transform: scale(1.1);
+}
+
+.Button {
+    background-color:  #ffffff;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 25px;
+    transition: .4s;
+    color: rgb(0, 73, 121);
+    border: solid rgb(0, 73, 121) 2px;
+}
+
+.Button:hover {
+    background-color: rgb(135, 193, 232);
+    left: 8%;
+    color: white;
+    border: white solid 2px;
+    transform: translateY(-50%);
+    transition: .3s;
+    transform: scale(1.1);
+}
+
+
+.grid-container {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: 400px 400px 400px 400px;
+    grid-template-rows: 300px 300px 300px;
+    gap: 50px 50px;
+    justify-content: space-evenly;
+    
+}
+
+
+footer {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+footer p:nth-child(1){
+    font-size: 30px;
+    color: rgb(20, 112, 175);
+    margin-bottom: 20px;
+}
+footer p:nth-child(2){
+   font-size: 17px;
+   width: 500px;
+   text-align: center;
+   line-height: 26px;
+}
+
+
+
+.social a img{
+    width: 45px;
+    height: 45px;
+    margin: 20px 12px;
+    transition: .4s;
+}
+
+.social a img:hover{
+ 
+    margin: 20px 12px;
+    transition: .3s;
+    transform: scale(1.1);
+}
+
+.end {
+    position: absolute;
+    color: rgb(0, 0, 0);
+    bottom: 35px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
